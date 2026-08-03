@@ -1,5 +1,7 @@
 console.log("JavaScript da página funcionando!");
 
 function mensagem() {
-    alert("Parabéns, Jailson! Seu JavaScript está funcionando!");
+    function mensagem() {
+    alert("Bem-vindo ao meu portfólio! Esta é apenas a primeira versão. Em breve, novos projetos serão adicionados.");
+}
 }

@@ -33,8 +33,9 @@ const servidor = http.createServer((req, res) => {
 });
     res.end(conteudo);
   });
+
 });
 
 servidor.listen(3000, () => {
-  console.log("Servidor rodando em http://localhost:3000");
+  console.log("Meu portfólio está online localmente!");
 });
