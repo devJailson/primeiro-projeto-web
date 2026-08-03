@@ -28,7 +28,9 @@ const servidor = http.createServer((req, res) => {
       return;
     }
 
-    res.writeHead(200, { "Content-Type": tipo });
+    res.writeHead(200, {
+  "Content-Type": `${tipo}; charset=UTF-8`,
+});
     res.end(conteudo);
   });
 });
