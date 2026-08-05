@@ -1,62 +1,155 @@
+<!-- Informa ao navegador que este documento utiliza HTML5 -->
 <!DOCTYPE html>
+
+<!-- Início do documento HTML.
+     lang="pt-BR" informa que o idioma da página é português do Brasil. -->
 <html lang="pt-BR">
 
 <head>
+
+    <!-- Permite exibir corretamente caracteres como ç, á, é, ã... -->
     <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar à largura da tela do computador, celular e tablet -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece na aba do navegador -->
     <title>Portfólio - Jailson</title>
+
+    <!-- Conecta este HTML ao arquivo CSS responsável pelo visual da página -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
+<!-- Tudo o que aparece para o visitante fica dentro do body -->
 <body>
 
+    <!-- Cabeçalho principal da página -->
     <header>
+
+        <!-- Menu de navegação -->
+        <nav>
+
+            <!-- Link para o topo da página -->
+            <a href="#">Início</a>
+
+            <!-- Link para a seção "Sobre" -->
+            <a href="#sobre">Sobre</a>
+
+            <!-- Link para a seção "Tecnologias" -->
+            <a href="#tecnologias">Tecnologias</a>
+
+            <!-- Link para a seção "Projetos" -->
+            <a href="#projetos">Projetos</a>
+
+        </nav>
+
+        <!-- Nome principal do portfólio -->
         <h1>Jailson</h1>
+
+        <!-- Profissão ou descrição -->
         <h2>Desenvolvedor Web em Formação</h2>
+
     </header>
 
+    <!-- Conteúdo principal do site -->
     <main>
 
-        <section>
+        <!-- Primeira seção -->
+        <!-- O id="sobre" permite que o menu leve o usuário até aqui -->
+        <section id="sobre">
+
+            <!-- Parágrafo de apresentação -->
             <p>
                 Olá! Meu nome é Jailson. Sou estudante de Ciência da Computação
                 e estou construindo minha jornada no desenvolvimento Web com
                 HTML, CSS, JavaScript, Node.js e Git.
             </p>
 
+            <!-- Botão que chama a função mensagem() do JavaScript -->
             <button onclick="mensagem()">
                 Conheça minha jornada
             </button>
+
         </section>
+
+        <!-- Segunda seção -->
         <section>
-    <h2>Sobre mim</h2>
 
-    <p>
-        Sou estudante de Ciência da Computação e tenho interesse em desenvolvimento
-        Web e tecnologia. Estou estudando HTML, CSS, JavaScript, Node.js, Git e
-        outras ferramentas para evoluir como desenvolvedor.
-    </p>
-</section>
-<section id="tecnologias">
-    <h2>Tecnologias</h2>
+            <!-- Título da seção -->
+            <h2>Sobre mim</h2>
 
-    <div class="cards">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Node.js</div>
-        <div class="card">Git</div>
-        <div class="card">GitHub</div>
-    </div>
-</section>
+            <!-- Texto sobre você -->
+            <p>
+                Sou estudante de Ciência da Computação e tenho interesse em desenvolvimento
+                Web e tecnologia. Estou estudando HTML, CSS, JavaScript, Node.js, Git e
+                outras ferramentas para evoluir como desenvolvedor.
+            </p>
 
-<section id="projetos">
-    <h2>Projetos</h2>
+        </section>
 
-    <div class="cards">
-        <div class="card">
-            <h3>Meu Portfólio</h3>
-            <p>Primeiro site desenvolvido utilizando HTML, CSS, JavaScript e Node.js.</p>
-        </div>
-    </div>
-</section>
+        <!-- Seção das tecnologias -->
+        <section id="tecnologias">
+
+            <!-- Título da seção -->
+            <h2>Tecnologias</h2>
+
+            <!-- Container que agrupa todos os cartões -->
+            <div class="cards">
+
+                <!-- Cada card representa uma tecnologia -->
+                <div class="card">HTML</div>
+                <div class="card">CSS</div>
+                <div class="card">JavaScript</div>
+                <div class="card">Node.js</div>
+                <div class="card">Git</div>
+                <div class="card">GitHub</div>
+
+            </div>
+
+        </section>
+
+        <!-- Seção de projetos -->
+        <section id="projetos">
+
+            <!-- Título -->
+            <h2>Projetos</h2>
+
+            <!-- Container dos projetos -->
+            <div class="cards">
+
+                <!-- Card do projeto -->
+                <div class="card">
+
+                    <!-- Nome do projeto -->
+                    <h3>Meu Portfólio</h3>
+
+                    <!-- Descrição -->
+                    <p>
+                        Primeiro site desenvolvido utilizando HTML, CSS,
+                        JavaScript e Node.js.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <!-- Direitos autorais -->
+        <p>© 2026 - Desenvolvido por Jailson</p>
+
+    </footer>
+
+    <!-- Liga o arquivo JavaScript ao HTML -->
+    <script src="script.js"></script>
+
+</body>
+
+<!-- Fim do documento HTML -->
+</html>

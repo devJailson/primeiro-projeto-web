@@ -1,69 +1,258 @@
+/* ============================
+   ESTILO GERAL DA PÁGINA
+============================ */
+
+/* Configurações aplicadas ao corpo inteiro da página */
 body {
+
+    /* Remove a margem padrão do navegador */
     margin: 0;
+
+    /* Define a fonte principal do site.
+       Se Arial não existir, usa Helvetica.
+       Se também não existir, usa qualquer fonte sem serifa. */
     font-family: Arial, Helvetica, sans-serif;
+
+    /* Cria um fundo em degradê de 135 graus,
+       indo do azul bem escuro para um azul mais claro */
     background: linear-gradient(135deg, #0f172a, #1e3a8a);
+
+    /* Define a cor padrão do texto */
     color: white;
+
+    /* Centraliza os textos da página */
     text-align: center;
 }
 
+
+/* ============================
+   CABEÇALHO
+============================ */
+
+/* Estiliza o cabeçalho da página */
 header {
+
+    /* Espaço interno:
+       50px em cima e embaixo
+       20px nas laterais */
     padding: 50px 20px;
 }
 
+
+/* ============================
+   TÍTULO PRINCIPAL
+============================ */
+
+/* Estilo do h1 */
 h1 {
+
+    /* Tamanho da fonte.
+       4rem significa aproximadamente 64 pixels. */
     font-size: 4rem;
+
+    /* Espaço abaixo do título */
     margin-bottom: 10px;
 }
 
+
+/* ============================
+   SUBTÍTULOS
+============================ */
+
+/* Todos os h2 terão essa cor azul clara */
 h2 {
     color: #60a5fa;
 }
 
+
+/* ============================
+   SEÇÕES
+============================ */
+
+/* Configuração geral de todas as seções */
 section {
+
+    /* Limita a largura máxima da seção */
     max-width: 800px;
+
+    /* Centraliza horizontalmente
+       e cria espaço acima e abaixo */
     margin: 40px auto;
+
+    /* Espaço interno */
     padding: 20px;
 }
 
+
+/* ============================
+   BOTÃO
+============================ */
+
+/* Aparência do botão */
 button {
+
+    /* Cor de fundo */
     background-color: #2563eb;
+
+    /* Cor do texto */
     color: white;
+
+    /* Remove a borda padrão */
     border: none;
+
+    /* Espaço interno */
     padding: 12px 24px;
+
+    /* Arredonda os cantos */
     border-radius: 8px;
+
+    /* Tamanho da fonte */
     font-size: 16px;
+
+    /* Muda o cursor para uma mãozinha */
     cursor: pointer;
 }
 
+
+/* Quando o mouse passa sobre o botão */
 button:hover {
+
+    /* O botão muda de cor */
     background-color: #1d4ed8;
 }
 
+
+/* ============================
+   RODAPÉ
+============================ */
+
 footer {
+
+    /* Espaço acima do rodapé */
     margin-top: 50px;
+
+    /* Espaço interno */
     padding: 20px;
+
+    /* Cor do texto */
     color: #cbd5e1;
 }
+
+
+/* ============================
+   CONTAINER DOS CARDS
+============================ */
+
 .cards {
+
+    /* Coloca os cards lado a lado */
     display: flex;
+
+    /* Centraliza os cards */
     justify-content: center;
+
+    /* Permite quebrar para outra linha
+       quando não houver espaço */
     flex-wrap: wrap;
+
+    /* Espaço entre os cards */
     gap: 20px;
+
+    /* Distância acima dos cards */
     margin-top: 30px;
 }
 
+
+/* ============================
+   CARD
+============================ */
+
 .card {
+
+    /* Cor de fundo */
     background-color: #2d5be3;
+
+    /* Cor do texto */
     color: white;
+
+    /* Espaço interno */
     padding: 18px 25px;
+
+    /* Cantos arredondados */
     border-radius: 12px;
+
+    /* Tamanho da fonte */
     font-size: 20px;
+
+    /* Texto em negrito */
     font-weight: bold;
+
+    /* Suaviza as animações */
     transition: 0.3s;
+
+    /* Cursor em formato de mão */
     cursor: pointer;
 }
 
+
+/* Quando o mouse passa sobre o card */
 .card:hover {
+
+    /* Faz o card subir levemente */
     transform: translateY(-8px);
+
+    /* Muda a cor do card */
     background-color: #4b7cff;
+}
+
+
+/* ============================
+   MENU DE NAVEGAÇÃO
+============================ */
+
+/* Organiza os links do menu */
+nav {
+
+    /* Coloca os links em linha */
+    display: flex;
+
+    /* Centraliza os links */
+    justify-content: center;
+
+    /* Espaço entre os links */
+    gap: 30px;
+
+    /* Distância abaixo do menu */
+    margin-bottom: 40px;
+}
+
+
+/* Estilo dos links do menu */
+nav a {
+
+    /* Cor do texto */
+    color: white;
+
+    /* Remove o sublinhado */
+    text-decoration: none;
+
+    /* Tamanho da fonte */
+    font-size: 18px;
+
+    /* Texto em negrito */
+    font-weight: bold;
+
+    /* Espaço interno */
+    padding: 10px;
+
+    /* Suaviza a animação */
+    transition: 0.3s;
+}
+
+
+/* Quando o mouse passa sobre um link */
+nav a:hover {
+
+    /* O link muda para azul claro */
+    color: #60a5fa;
 }
