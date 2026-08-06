@@ -256,3 +256,145 @@ nav a:hover {
     /* O link muda para azul claro */
     color: #60a5fa;
 }
+/* ============================
+   MELHORIAS DE LEITURA
+============================ */
+
+/* Melhora a leitura dos parágrafos */
+p {
+    /* Aumenta o tamanho do texto */
+    font-size: 18px;
+
+    /* Aumenta o espaço entre as linhas */
+    line-height: 1.6;
+}
+
+
+/* ============================
+   LINK DA SEÇÃO DE CONTATO
+============================ */
+
+/* Estiliza somente o link que está dentro da seção contato */
+#contato a {
+    /* Faz o link se comportar como um botão */
+    display: inline-block;
+
+    /* Cor de fundo */
+    background-color: #2563eb;
+
+    /* Cor do texto */
+    color: white;
+
+    /* Remove o sublinhado */
+    text-decoration: none;
+
+    /* Espaço interno */
+    padding: 12px 24px;
+
+    /* Arredonda os cantos */
+    border-radius: 8px;
+
+    /* Texto em negrito */
+    font-weight: bold;
+
+    /* Espaço acima do botão */
+    margin-top: 10px;
+
+    /* Suaviza a mudança de cor e movimento */
+    transition: 0.3s;
+}
+
+
+/* Efeito ao passar o mouse no botão do GitHub */
+#contato a:hover {
+    /* Muda a cor de fundo */
+    background-color: #1d4ed8;
+
+    /* Faz o botão subir levemente */
+    transform: translateY(-3px);
+}
+
+
+/* ============================
+   MELHORIAS NOS CARDS
+============================ */
+
+/* Ajusta os cards de tecnologia */
+#tecnologias .card {
+    /* Define uma largura mínima */
+    min-width: 90px;
+}
+
+
+/* Ajusta os cards de projetos */
+#projetos .card {
+    /* Permite que o card ocupe melhor o espaço */
+    width: 100%;
+
+    /* Limita a largura máxima */
+    max-width: 600px;
+}
+
+
+/* O texto dentro do projeto não ficará em negrito */
+#projetos .card p {
+    font-weight: normal;
+}
+
+
+/* ============================
+   ROLAGEM SUAVE
+============================ */
+
+/* Faz o menu deslizar suavemente até as seções */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ============================
+   RESPONSIVIDADE
+============================ */
+
+/* Essas regras serão aplicadas em telas com até 600 pixels */
+@media (max-width: 600px) {
+
+    /* Diminui o título principal */
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    /* Faz o menu quebrar em mais de uma linha */
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Diminui um pouco os links do menu */
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    /* Reduz o espaço do cabeçalho */
+    header {
+        padding: 30px 15px;
+    }
+
+    /* Ajusta as seções para telas menores */
+    section {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    /* Faz os cards ocuparem melhor a tela */
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Ajusta o tamanho dos parágrafos */
+    p {
+        font-size: 16px;
+    }
+}
